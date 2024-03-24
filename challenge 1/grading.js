@@ -1,27 +1,27 @@
-function calculateGrade(grade)
+function calculateGrade(score)
 {
 
-if (grade >= 80 && grade <= 100) {
+if (score >= 80 && score <= 100) {
     return ("A");
 }
 
-else if (grade >= 60 && grade <= 79) {
+else if (score >= 60 && score <= 79) {
     return ("B");
 }
 
-else if (grade >= 50 && grade <= 59){
+else if (score >= 50 && score <= 59){
     return ("C");
 }
 
-else if (grade >= 40 && grade <= 49){
+else if (score >= 40 && score <= 49){
     return ("D");
 }
 
-else if  (grade >=0 && grade <=39){
+else if  (score >=0 && score <=39){
     return ("E");
 }
 
-else (grade < 0 || grade > 100) 
+else (score < 0 || score > 100) 
 return ("Invalid input. Please enter valid marks between 0 and 100");
 
 
@@ -32,11 +32,10 @@ function GradeCounter()
     let total = (calculateGrade);
     console.log("Type in your marks here: ");
 
-    if (total = calculateGrade(56) ) {
-    return (`The student's grade is: ${total}`);
+    if (total = calculateGrade(60) ) {
+    return (`The student's score is: ${total}`);
     }
 }
 
     const result = GradeCounter();
     console.log(result);
-    
